@@ -1,0 +1,122 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  padding: 10px;
+}
+
+.lightbox:target {
+  display: table;
+  opacity: 1;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cell {
+  display: table-cell;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.lightbox-info {
+  display: table-cell;
+  width: 40%;
+  margin: 0 auto;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  /* vertical-align: top; */
+  color: white;
+}
+
+.lightbox-info-title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.lightbox-info-owner {
+  display: table;
+  margin: 0 auto;
+}
+
+.lightbox-info-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lightbox-info-mid-cell {
+  display: table-cell;
+  padding: 0 10px;
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+.lightbox-info-avatar {
+  border-radius: 50%;
+}
+
+.badge {
+  margin: 10px 10px 20px 10px;
+}
+
+.card-lightbox-img {
+  display: table-cell;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  /* vertical-align: top; */
+}
+
+.card-lightbox-img img {
+  width: 100%;
+}
+
+.card-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin: 10px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.card-lightbox-close:before {
+  position: absolute;
+  left: 22px;
+  content: '';
+  display: block;
+  height: 50px;
+  width: 2px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.card-lightbox-close:after {
+  position: absolute;
+  left: 22px;
+  content: '';
+  display: block;
+  height: 50px;
+  width: 2px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "lightbox-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "api": "node app.js",
+    "config": "node configure.js",
+    "start": "concurrently \"node app.js\" \"cd frontend && npm start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fetch": "^1.1.0",
+    "fs-extra": "^7.0.0",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  }
+}

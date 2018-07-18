@@ -1,0 +1,14 @@
+.header {
+  height: 76px;
+  padding: 15px;
+  color: white;
+  background-color: black;
+}
+
+.header-title {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  border-radius: 0px;
+}
